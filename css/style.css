@@ -1,0 +1,23 @@
+img{
+	width: 50%;
+	height: 200px;
+	float: left;
+}
+#head{
+	background-color: #59A1F1;
+	text-align: center;
+	color: white;
+	font-size: 50px;
+	padding: 10px;
+}
+
+#nav{
+	background-color: #2D537E;
+	text-decoration: none;
+	font-size: 30px;
+	font-color: white;
+}
+form{
+	float: right;
+	width: 50%;
+}
