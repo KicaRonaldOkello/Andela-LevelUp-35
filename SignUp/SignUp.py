@@ -5,14 +5,22 @@ class Register:
     details = []
 
     def firstName(self, firstname):
-
-        self.details.append(firstname)
+        if firstname == "":
+            print ("Please enter first name")
+        else:
+            self.details.append(firstname)
 
     def lastName(self, lastname):
-        self.details.append(lastname)
+        if lastname == "":
+            print ("Please enter lastname name")
+        else:
+            self.details.append(lastname)
 
     def emails(self, email):
-        self.details.append(email)
+        if email == "":
+            print ("Please enter valid email")
+        else:
+            self.details.append(email)
 
     def confirm(self):
         REGISTER.append(self.details)
