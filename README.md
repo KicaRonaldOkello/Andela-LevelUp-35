@@ -1,5 +1,10 @@
 # Andela-LevelUp-35
 	This is a repository showing progress in pre-bootcamp learning.
+# Access.
+  - Access my site on github pages at
+	
+	https://kicaronaldokello.github.io/Ron-Events-App/
+
 # How To Get Started.
   - Open the command line terminal and create a directory and enter into it.
 
