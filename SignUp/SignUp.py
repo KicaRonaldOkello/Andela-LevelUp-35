@@ -7,21 +7,22 @@ class Register:
 
     def firstName(self, firstname):
         if firstname == "":
-            print ("Please enter first name")
+            return ("Please enter first name")
         else:
             self.details["firstname"] = firstname
 
     def lastName(self, lastname):
         if lastname == "":
-            print ("Please enter lastname name")
+            return ("Please enter lastname name")
         else:
             self.details["lastname"] = lastname
 
     def emails(self, email):
         if email == "":
-            print ("Please enter valid email")
+            return ("Please enter valid email")
         else:
             self.details["email"] = email
+        
 
     def confirm(self):
         self.REGISTER.append(self.details)

@@ -31,7 +31,7 @@ class TestSignUp(unittest.TestCase):
         self.register.firstName(e)
         self.assertEqual(len(self.register.details), self.a)
 
-    def test_confirm(self):
+    def test_length_of_register_list(self):
         a = len(self.register.REGISTER)
         self.register.firstName("kica")
         self.register.lastName("ronald")
@@ -39,7 +39,13 @@ class TestSignUp(unittest.TestCase):
         self.register.confirm()
         self.assertEqual(len(self.register.REGISTER), a+1)
 
-    def test_length_of_register_list(self):
-        pass
+    def test_confirm(self):
+        e = ""
+        self.register.firstName(e)
+        self.register.lastName(e)
+        self.register.emails(e)
+        self.register.confirm()
+        self.assertEqual(len(self.register.REGISTER), 0)
+        
         
         
