@@ -24,6 +24,16 @@ class TestSignUp(unittest.TestCase):
         self.register.emails("okello.ronald@gmail.com")
         self.assertEqual(self.register.details["email"], "okello.ronald@gmail.com")
 
+    def test_empty_email(self):
+        
+        self.assertEqual(self.register.emails(""), "Please enter valid email")
+
+    def test_empty_firstname(self):
+       self.assertEqual(self.register.firstName(""), "Please enter first name") 
+
+    def test_empty_lastname(self):
+        self.assertEqual(self.register.lastName(""), "Please enter last name") 
+
     def test_whitespace(self):
         e = ""
         self.register.firstName(e)

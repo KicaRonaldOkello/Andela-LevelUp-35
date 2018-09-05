@@ -13,7 +13,7 @@ class Register:
 
     def lastName(self, lastname):
         if lastname == "":
-            return ("Please enter lastname name")
+            return ("Please enter last name")
         else:
             self.details["lastname"] = lastname
 
@@ -25,12 +25,11 @@ class Register:
         
 
     def confirm(self):
-        self.REGISTER.append(self.details)
-        if self.REGISTER is not None:
+        if len(self.details) !=  0:
+            self.REGISTER.append(self.details)
             print ("Entry confirmed")
             print ("there are " + str(len(self.REGISTER)) + " users")
         else:
-            self.REGISTER.remove(-1)
             print ("Error in registration")
 
 #sign = Register()
