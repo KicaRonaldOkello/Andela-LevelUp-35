@@ -14,15 +14,15 @@ class TestSignUp(unittest.TestCase):
     def test_firstName(self):
        
         self.register.firstName("kica")
-        self.assertEqual(len(self.register.details), self.a)
+        self.assertEqual(self.register.details["firstname"], "kica")
 
     def test_lastName(self):
         self.register.lastName("ronald")
-        self.assertEqual(len(self.register.details), self.a+1)
+        self.assertEqual(self.register.details["lastname"], "ronald")
 
     def test_emails(self):
         self.register.emails("okello.ronald@gmail.com")
-        self.assertEqual(len(self.register.details), self.a+1)
+        self.assertEqual(self.register.details["email"], "okello.ronald@gmail.com")
 
     def test_whitespace(self):
         e = ""
